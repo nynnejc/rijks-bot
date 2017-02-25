@@ -22,6 +22,7 @@ module Rijksmus
           random_response = get("?q=#{ query }&p=#{rand(1..number_of_search_pages)}imgonly=true&ps=10")
           random_response
         else
+          puts response.inspect
           raise response.response
         end
       end
