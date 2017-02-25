@@ -1,1 +1,4 @@
 .env
+*.gem
+pkg/
+Gemfile.lock
