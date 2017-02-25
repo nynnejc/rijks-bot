@@ -4,7 +4,7 @@ module Rijksmus
       include ::HTTParty
 
       base_uri "https://www.rijksmuseum.nl/api/en"
-      debug_output
+      # debug_output
       default_params :format => "json"
 
       attr_accessor :search_term, :api_token
@@ -12,6 +12,7 @@ module Rijksmus
       def initialize(search_term, api_token)
         self.search_term = search_term
         self.api_token = api_token
+        search_term || raise('No search term provided')
       end
 
 
@@ -26,12 +27,11 @@ module Rijksmus
         response = images 
         if response.success?
           count = response["count"]
-          number_of_search_pages = (count / 10).round
-          random_response = images number_of_search_pages
+          random_response = images rand((count / 10).round)
           random_response
         else
           puts response.inspect
-          raise response.response
+          raise(response)
         end
       end
     end

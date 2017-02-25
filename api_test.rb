@@ -9,12 +9,12 @@ api_key = ENV["rijksmuseum_api_key"]
 
 
 search_term = ARGV[0]
-puts ARGV.inspect
+search_term || raise('No search term provided')
 random_number = rand(0..9)
 random_textile = Rijksmus::API::Client.new(search_term, api_key).random_image_search
-# puts random_textile.body.inspect
-random_object_image_url = random_textile.body["artObjects"][random_number]["webImage"]["url"]
-# puts random_object_image_url
+puts random_textile.class.inspect
+random_object_image_url = random_textile["artObjects"][random_number]["webImage"]["url"]
+puts random_object_image_url
 
 random_textile_image_title = random_textile["artObjects"][random_number]["longTitle"]
 
