@@ -1,17 +1,34 @@
+PATH
+  remote: .
+  specs:
+    rijksmus-api (0.1.0)
+      dotenv
+      httparty
+
 GEM
   remote: https://rubygems.org/
   specs:
+    coderay (1.1.1)
     dotenv (2.1.1)
     httparty (0.14.0)
       multi_xml (>= 0.5.2)
+    method_source (0.8.2)
     multi_xml (0.5.5)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    rake (10.5.0)
+    slop (3.6.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  dotenv
-  httparty
+  bundler (~> 1.7)
+  pry
+  rake (~> 10.0)
+  rijksmus-api!
 
 BUNDLED WITH
    1.12.5

@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'httparty'
-gem 'dotenv'
-gem 'pry'
+# Specify your gem's dependencies in woro-s3.gemspec
+gemspec
+
+group :test do
+  # gem "rspec"
+  # gem "rspec-nc"
+  # gem 'fakefs'
+end
