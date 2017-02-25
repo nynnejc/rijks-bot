@@ -1,5 +1,6 @@
 require 'httparty'
 require 'dotenv'
+require 'pry'
 Dotenv.load
 
 api_key = ENV["rijksmuseum_api_key"]
@@ -17,18 +18,9 @@ class Rijksmus
     self.p = p
   end
 
-  def self.random_image_search(query)
-    response = get("?q=#{ query }&imgonly=true&ps=10")
-    if response.success?
-      response
-    else
-      raise response.response
-    end
-  end
-
 
   def self.random_image_search query
-    response = get("?q=#{ query }&imgonly=true&ps=10")
+    response = get("?q=#{ query }&imgonly=true&ps=10&culture=en")
     if response.success?
       count = response["count"]
       number_of_search_pages = (count / 10).round
@@ -40,9 +32,18 @@ class Rijksmus
   end
 end
 
-random_textile = Rijksmus.random_image_search "textile"
-random_object_image_url = random_textile["artObjects"][rand(0..9)]["webImage"]["url"]
+search_term = ARGV[0]
+puts ARGV.inspect
+random_number = rand(0..9)
+random_textile = Rijksmus.random_image_search search_term
+random_object_image_url = random_textile["artObjects"][random_number]["webImage"]["url"]
 puts random_object_image_url
+
+random_textile_image_title = random_textile["artObjects"][random_number]["longTitle"]
+
+puts random_textile_image_title
+
+
 # user_input = Rijks.image_search ARGV[0]
 #
 # textile = Rijks.image_search "textile"
