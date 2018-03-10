@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["mail@danielsenff.de"]
   spec.summary       = %q{Image Finder Gem for the Rijskmuseum API}
   spec.description   = %q{Image Finder Gem for the Rijskmuseum API}
-  spec.homepage      = "https://github.com/nynnejc/rijks-api-test"
+  spec.homepage      = "https://github.com/nynnejc/rijks-bot"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
