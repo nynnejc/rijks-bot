@@ -31,11 +31,12 @@ def extract_search(tweet)
   tweet.text.downcase.sub("@rijks_bot", "").strip
 end
 
-def default_image(search_term)
-  {
-  "webImage" => { "url" => "https://lh3.googleusercontent.com/D2IPnfkJPa8cPSuhehu5e2aeteqzK5Zb0OzL9-zA4_FHBQHrD8RLT_3XZ9FDYtE64e_cdqTxZF_VfG4MsPcKr90FV6E" },
-  "title" => "Couldn't find an image for that."
-  }
+def random_image
+  random_words = %w(cat lemon painting unicorn)
+  random_word = random_words.sample
+  get_image(random_word).merge({
+    "title" => "Couldn't find an image for that."
+  })
 end
 
 def get_image(search_term)
@@ -65,7 +66,7 @@ while true do
     else   
       puts "replying to #{tweet.user.screen_name}"
       search_term = extract_search(tweet)
-      image = get_image(search_term) || default_image(search_term)
+      image = get_image(search_term) || random_image
       reply_with_image(client, tweet, image)
     end
   end

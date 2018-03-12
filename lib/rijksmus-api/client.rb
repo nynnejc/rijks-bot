@@ -19,7 +19,7 @@ module Rijksmus
       def images 
         page = nil
         endpoint = '/collection'
-        options = { query: { q: search_term, imgonly: true, p: page, ps: 10, culture: 'en', key: api_token } }
+        options = { query: { q: search_term, imgonly: true, p: page, ps: 50, culture: 'en', key: api_token } }
         response = self.class.get(endpoint, options)
         response
       end
@@ -28,7 +28,7 @@ module Rijksmus
         response = images 
         if response.success?
           count = response["count"]
-          response.parsed_response["artObjects"][rand((10).round)]
+          response.parsed_response["artObjects"][rand(count)]
         else
           puts response.inspect
           raise(response)
