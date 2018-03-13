@@ -28,7 +28,7 @@ module Rijksmus
         response = images 
         if response.success? 
           count = response["count"]
-          response["artObjects"].first
+          response["artObjects"].sample
 
         else
           raise(response.inspect)
