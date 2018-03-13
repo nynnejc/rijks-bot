@@ -1,5 +1,5 @@
 
-![vanitas](SK-A-1686.jpg)
+![vanitas](SK-A-1686.jpg =250x)
 
 Vanitas stillife by N.L. Peschier, 1660.
 
