@@ -1,5 +1,5 @@
 
-![vanitas]()
+![vanitas](SK-A-1686.jpg)
 
 Vanitas stillife by N.L. Peschier, 1660.
 
