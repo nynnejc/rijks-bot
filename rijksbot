@@ -21,8 +21,7 @@ end
 
 def already_replied?(client, tweet)
   already_replied_to =  client.user_timeline(count: 800).map{|t| t.in_reply_to_status_id}
-  already_replied_to.include?(tweet.id)
-end
+  already_replied_to.include?(tweet.id) end
 
 # create def count_twitter_max = 800
 # create def one_day_in_seconds = 86400
@@ -32,7 +31,7 @@ def extract_search(tweet)
 end
 
 def random_image
-  random_words = %w(cat lemon painting unicorn)
+  random_words = %w(lemon pineapple banana cheese orange butterfly stilleven vanitas painting ballet unicorn heart naakt dieren)
   random_word = random_words.sample
   get_image(random_word).merge({
     "title" => "Couldn't find an image for that."
@@ -49,7 +48,7 @@ def reply_with_image(client, tweet, image)
   image_title = image["title"]
   screen_name =  "@" + tweet.user.screen_name
   text = screen_name + " " + image_title
-  client.update_with_media(text, open(image_url), in_reply_to_status_id: tweet.id)
+  # client.update_with_media(text, open(image_url), in_reply_to_status_id: tweet.id)
 end
 
 last_checked = Time.now.utc - 86400
