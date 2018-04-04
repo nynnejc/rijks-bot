@@ -1,12 +1,9 @@
 #!/usr/bin/env ruby
 
 $LOAD_PATH.unshift(File.expand_path("lib"))
-require 'httparty'
 require 'dotenv'
 require 'pry'
-require 'rijksmus-api'
-require 'twitter'
-require 'open-uri'
+require 'rijksbot'
 Dotenv.load
 
 client = Twitter::REST::Client.new do |config|
@@ -16,61 +13,28 @@ client = Twitter::REST::Client.new do |config|
   config.access_token_secret = ENV["RIJKSBOT_ACCESS_SECRET"]
 end
 
-# timeline = client.user_timeline(count: 800).map{|t| t.in_reply_to_status_id}                                                        
-
-
-def already_replied?(client, tweet)
-  already_replied_to =  client.user_timeline(count: 800).map{|t| t.in_reply_to_status_id}
-  already_replied_to.include?(tweet.id)
-end
-
-# create def count_twitter_max = 800
-# create def one_day_in_seconds = 86400
-
-def extract_search(tweet)
-  tweet.text.downcase.sub("@rijks_bot", "").strip
-end
-
-def random_image
-  random_words = %w(lemon pineapple banana cheese orange butterfly stilleven vanitas painting ballet unicorn heart naakt dieren)
-  random_word = random_words.sample
-  get_image(random_word).merge({
-    "title" => "Couldn't find an image for that."
-  })
-end
-
-def get_image(search_term)
-  api_key = ENV["rijksmuseum_api_key"]
-  image = Rijksmus::API::Client.new(search_term, api_key).random_image_search
-end
-
-def reply_with_image(client, tweet, image)
-  image_url = image["webImage"]["url"]
-  image_title = image["title"]
-  screen_name =  "@" + tweet.user.screen_name
-  text = screen_name + " " + image_title
-  client.update_with_media(text, open(image_url), in_reply_to_status_id: tweet.id)
-end
+# timeline = client.user_timeline(count: 800).map{|t| t.in_reply_to_status_id}
+bot = Rijksbot.new(client)
 
 last_checked = Time.now.utc - 86400
 
 while true do
-  mentions = client.mentions_timeline.select{|tweet| tweet.created_at > last_checked}  
+  mentions = client.mentions_timeline.select{|tweet| tweet.created_at > last_checked}
   last_checked = Time.now.utc
 
   mentions.each do |tweet|
     puts "Recieved mention: #{tweet.text} from #{tweet.user.screen_name}"
-      
-    if already_replied?(client, tweet)
+
+    if bot.already_replied?(tweet)
       puts "already replied to #{tweet.text}"
-    else   
+    else
       puts "replying to #{tweet.user.screen_name}"
-      search_term = extract_search(tweet)
-      image = get_image(search_term) || random_image
-      reply_with_image(client, tweet, image)
+      search_term = bot.extract_search(tweet)
+      image = bot.get_image(search_term) || bot.random_image
+      bot.reply_with_image(tweet, image)
     end
   end
   sleep 30
-end 
+end
 
 puts "finished"
