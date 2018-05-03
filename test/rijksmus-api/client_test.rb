@@ -6,7 +6,7 @@ describe Rijksmus::API::Client, :vcr do
 
   let(:search_term){"Karlsruhe"}
 
-  subject { Rijksmus::API::Client.new(search_term, 'XxQeSXj5') }
+  subject { Rijksmus::API::Client.new(search_term, ENV["RIJKSMUSEUM_API_KEY"]) }
 
   describe "requesting art" do
 

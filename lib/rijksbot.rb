@@ -29,7 +29,7 @@ class Rijksbot
   end
 
   def get_image(search_term)
-    api_key = ENV["rijksmuseum_api_key"]
+    api_key = ENV["RIJKSMUSEUM_API_KEY"]
     image = Rijksmus::API::Client.new(search_term, api_key).random_image_search
   end
 
