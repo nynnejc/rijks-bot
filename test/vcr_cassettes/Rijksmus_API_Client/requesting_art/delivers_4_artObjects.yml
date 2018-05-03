@@ -1,0 +1,140 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.rijksmuseum.nl/api/en/collection?culture=en&format=json&imgonly=true&key=XxQeSXj5&p=&ps=100&q=Karlsruhe
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 02 May 2018 22:14:47 GMT
+      Set-Cookie:
+      - rmtc=Wuo4Vwq5Lt0AABwISQUAAACT; path=/
+      Cache-Control:
+      - no-store, must-revalidate, no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Request-Context:
+      - appId=cid-v1:e424d2a2-13b5-4836-82bb-d9f4bdcde3ba
+      X-Frame-Options:
+      - DENY
+      Content-Length:
+      - '7703'
+    body:
+      encoding: UTF-8
+      string: "{\r\n  \"elapsedMilliseconds\": 0,\r\n  \"count\": 4,\r\n  \"countFacets\":
+        {\r\n    \"hasimage\": 4,\r\n    \"ondisplay\": 0\r\n  },\r\n  \"artObjects\":
+        [\r\n    {\r\n      \"links\": {\r\n        \"self\": \"https://www.rijksmuseum.nl/api/en/collection/RP-T-1962-67\",\r\n
+        \       \"web\": \"https://www.rijksmuseum.nl/en/collection/RP-T-1962-67\"\r\n
+        \     },\r\n      \"id\": \"en-RP-T-1962-67\",\r\n      \"objectNumber\":
+        \"RP-T-1962-67\",\r\n      \"title\": \"Gezicht op een laan met Schloss Karlsruhe\",\r\n
+        \     \"hasImage\": true,\r\n      \"principalOrFirstMaker\": \"Johann Goll
+        van Frankenstein (I)\",\r\n      \"longTitle\": \"Gezicht op een laan met
+        Schloss Karlsruhe, Johann Goll van Frankenstein (I), 1732 - 1785\",\r\n      \"showImage\":
+        false,\r\n      \"permitDownload\": false,\r\n      \"webImage\": {\r\n        \"guid\":
+        \"9761e67d-1fb7-4bc9-8f6a-8d645285d2ca\",\r\n        \"offsetPercentageX\":
+        0,\r\n        \"offsetPercentageY\": 0,\r\n        \"width\": 2074,\r\n        \"height\":
+        2074,\r\n        \"url\": \"https://lh3.ggpht.com/VzU8p_249KAKZoAYdcmnYO45DgmYl9gtBRkO8GSbaptDLXGeYVjJ5rcLfOOuXTd6FG25Z6rVyKaNuzcWBj9RnxXGLA\"\r\n
+        \     },\r\n      \"headerImage\": {\r\n        \"guid\": \"75ba8cd6-bff0-498f-898b-5a2f3d93c9bc\",\r\n
+        \       \"offsetPercentageX\": 0,\r\n        \"offsetPercentageY\": 0,\r\n
+        \       \"width\": 460,\r\n        \"height\": 460,\r\n        \"url\": \"https://lh5.ggpht.com/rQUpXMZxjalxBSBJ9yU2NxbNh8W6ZgbgVkfBNJNYjgLZUyysMw_b2rHQ0vnLhCs5E5Ppdsv9g4yOk0M5qEK8RR9W0e0\"\r\n
+        \     },\r\n      \"productionPlaces\": []\r\n    },\r\n    {\r\n      \"links\":
+        {\r\n        \"self\": \"https://www.rijksmuseum.nl/api/en/collection/RP-P-1964-2912\",\r\n
+        \       \"web\": \"https://www.rijksmuseum.nl/en/collection/RP-P-1964-2912\"\r\n
+        \     },\r\n      \"id\": \"en-RP-P-1964-2912\",\r\n      \"objectNumber\":
+        \"RP-P-1964-2912\",\r\n      \"title\": \"Portret van Karel Frederik van Baden\",\r\n
+        \     \"hasImage\": true,\r\n      \"principalOrFirstMaker\": \"Johann Esaias
+        Nilson\",\r\n      \"longTitle\": \"Portret van Karel Frederik van Baden,
+        Johann Esaias Nilson, 1771 - 1788\",\r\n      \"showImage\": false,\r\n      \"permitDownload\":
+        false,\r\n      \"webImage\": {\r\n        \"guid\": \"7395c114-4d93-46f6-b927-b0e3cde28418\",\r\n
+        \       \"offsetPercentageX\": 0,\r\n        \"offsetPercentageY\": 0,\r\n
+        \       \"width\": 2500,\r\n        \"height\": 2500,\r\n        \"url\":
+        \"https://lh3.googleusercontent.com/SQ2t_6AJ-54wVZXp9t4gh8cD6Hd8yLphPwFMt5waj6hVYt4rzg1npdx5URjFnbWEB1bcRANQHMV_coImc5kqwDc6Y1U\"\r\n
+        \     },\r\n      \"headerImage\": {\r\n        \"guid\": \"0ce3e6ac-c34e-4ba6-8b93-a44a05d32bcf\",\r\n
+        \       \"offsetPercentageX\": 0,\r\n        \"offsetPercentageY\": 0,\r\n
+        \       \"width\": 383,\r\n        \"height\": 383,\r\n        \"url\": \"https://lh3.googleusercontent.com/XsYKcv3j00EWo0AV980UdzjGEGrVp-r2jK0HeNi4LcNwdVdaH2svJnEQGMZLL5AMTOrXv408AQKi27molm4H8Cm6R9nl\"\r\n
+        \     },\r\n      \"productionPlaces\": [\r\n        \"Augsburg\"\r\n      ]\r\n
+        \   },\r\n    {\r\n      \"links\": {\r\n        \"self\": \"https://www.rijksmuseum.nl/api/en/collection/RP-F-2016-135-21\",\r\n
+        \       \"web\": \"https://www.rijksmuseum.nl/en/collection/RP-F-2016-135-21\"\r\n
+        \     },\r\n      \"id\": \"en-RP-F-2016-135-21\",\r\n      \"objectNumber\":
+        \"RP-F-2016-135-21\",\r\n      \"title\": \"XV \\\"1921-1922\\\"\",\r\n      \"hasImage\":
+        true,\r\n      \"principalOrFirstMaker\": \"Hendrik Herman van den Berg\",\r\n
+        \     \"longTitle\": \"XV \\\"1921-1922\\\", Hendrik Herman van den Berg,
+        in or after 1921\",\r\n      \"showImage\": false,\r\n      \"permitDownload\":
+        false,\r\n      \"webImage\": {\r\n        \"guid\": \"c345e4fc-a092-4fff-8d47-75ae35f0fcee\",\r\n
+        \       \"offsetPercentageX\": 0,\r\n        \"offsetPercentageY\": 0,\r\n
+        \       \"width\": 2500,\r\n        \"height\": 2500,\r\n        \"url\":
+        \"https://lh3.googleusercontent.com/i6VWQ-Bkv943Mks0lNMfltfMCWtqNS1uXu_47-rQp__62We9Wk3E7_U5rJXn7w-MZVHMrxv0xnSfSdftmfZNtU3-Gg\"\r\n
+        \     },\r\n      \"headerImage\": {\r\n        \"guid\": \"1d300bed-5d35-41d9-9415-55da36dc49f0\",\r\n
+        \       \"offsetPercentageX\": 0,\r\n        \"offsetPercentageY\": 0,\r\n
+        \       \"width\": 460,\r\n        \"height\": 460,\r\n        \"url\": \"https://lh3.googleusercontent.com/3J5Qz1tfFE6VT6cAalLRtMfBizP840ySasog2G75Xbu3rTVU36tSGKqAm-aIEs5w_5ZutbmGJbwPif3MCNluO16Jpw\"\r\n
+        \     },\r\n      \"productionPlaces\": [\r\n        \"Amsterdam\"\r\n      ]\r\n
+        \   },\r\n    {\r\n      \"links\": {\r\n        \"self\": \"https://www.rijksmuseum.nl/api/en/collection/BK-1961-105\",\r\n
+        \       \"web\": \"https://www.rijksmuseum.nl/en/collection/BK-1961-105\"\r\n
+        \     },\r\n      \"id\": \"en-BK-1961-105\",\r\n      \"objectNumber\": \"BK-1961-105\",\r\n
+        \     \"title\": \"Black wedding dress\",\r\n      \"hasImage\": true,\r\n
+        \     \"principalOrFirstMaker\": \"W. Wildermann\",\r\n      \"longTitle\":
+        \"Black wedding dress, W. Wildermann, 1885\",\r\n      \"showImage\": false,\r\n
+        \     \"permitDownload\": false,\r\n      \"webImage\": {\r\n        \"guid\":
+        \"bf20b495-023a-4dfc-b43c-27ccac3a6b04\",\r\n        \"offsetPercentageX\":
+        0,\r\n        \"offsetPercentageY\": 0,\r\n        \"width\": 2500,\r\n        \"height\":
+        2500,\r\n        \"url\": \"https://lh6.ggpht.com/BRu2cCzuAhxpglCIsNqVfkpYoDWGM7Fiige8BtKrrbZDiKRKwzsX6XQAPI52HmbqmKG40tr7oRv039AY56wld7vb6Q\"\r\n
+        \     },\r\n      \"headerImage\": {\r\n        \"guid\": \"2ff0f40f-1bf4-414e-bdef-134b5154de11\",\r\n
+        \       \"offsetPercentageX\": 0,\r\n        \"offsetPercentageY\": 0,\r\n
+        \       \"width\": 440,\r\n        \"height\": 440,\r\n        \"url\": \"https://lh5.ggpht.com/r6ndS9913SogtQwjZddTjoJ9fyjy571LuWeVGHxX6zfc7o_hw3B9m5-diGJeiANP3XqFs_Vkvzpac8_4RnAbiBuTufcf\"\r\n
+        \     },\r\n      \"productionPlaces\": []\r\n    }\r\n  ],\r\n  \"facets\":
+        [\r\n    {\r\n      \"facets\": [\r\n        {\r\n          \"key\": \"Hendrik
+        Herman van den Berg\",\r\n          \"value\": 1\r\n        },\r\n        {\r\n
+        \         \"key\": \"Johann Esaias Nilson\",\r\n          \"value\": 1\r\n
+        \       },\r\n        {\r\n          \"key\": \"Johann Goll van Frankenstein
+        (I)\",\r\n          \"value\": 1\r\n        },\r\n        {\r\n          \"key\":
+        \"W. Wildermann\",\r\n          \"value\": 1\r\n        }\r\n      ],\r\n
+        \     \"name\": \"principalMaker\",\r\n      \"otherTerms\": 4,\r\n      \"prettyName\":
+        10\r\n    },\r\n    {\r\n      \"facets\": [\r\n        {\r\n          \"key\":
+        \"drawing\",\r\n          \"value\": 1\r\n        },\r\n        {\r\n          \"key\":
+        \"print\",\r\n          \"value\": 1\r\n        }\r\n      ],\r\n      \"name\":
+        \"type\",\r\n      \"otherTerms\": 0,\r\n      \"prettyName\": 3\r\n    },\r\n
+        \   {\r\n      \"facets\": [\r\n        {\r\n          \"key\": \"18\",\r\n
+        \         \"value\": 2\r\n        },\r\n        {\r\n          \"key\": \"19\",\r\n
+        \         \"value\": 1\r\n        },\r\n        {\r\n          \"key\": \"20\",\r\n
+        \         \"value\": 1\r\n        }\r\n      ],\r\n      \"name\": \"dating.period\",\r\n
+        \     \"otherTerms\": 0,\r\n      \"prettyName\": 4\r\n    },\r\n    {\r\n
+        \     \"facets\": [\r\n        {\r\n          \"key\": \"Amsterdam\",\r\n
+        \         \"value\": 1\r\n        },\r\n        {\r\n          \"key\": \"Augsburg\",\r\n
+        \         \"value\": 1\r\n        }\r\n      ],\r\n      \"name\": \"place\",\r\n
+        \     \"otherTerms\": 0,\r\n      \"prettyName\": 2\r\n    },\r\n    {\r\n
+        \     \"facets\": [\r\n        {\r\n          \"key\": \"paper\",\r\n          \"value\":
+        2\r\n        },\r\n        {\r\n          \"key\": \"chalk\",\r\n          \"value\":
+        1\r\n        },\r\n        {\r\n          \"key\": \"jet (coal)\",\r\n          \"value\":
+        1\r\n        },\r\n        {\r\n          \"key\": \"silk\",\r\n          \"value\":
+        1\r\n        }\r\n      ],\r\n      \"name\": \"material\",\r\n      \"otherTerms\":
+        0,\r\n      \"prettyName\": 5\r\n    },\r\n    {\r\n      \"facets\": [\r\n
+        \       {\r\n          \"key\": \"brush\",\r\n          \"value\": 1\r\n        },\r\n
+        \       {\r\n          \"key\": \"engraving\",\r\n          \"value\": 1\r\n
+        \       },\r\n        {\r\n          \"key\": \"etching\",\r\n          \"value\":
+        1\r\n        }\r\n      ],\r\n      \"name\": \"technique\",\r\n      \"otherTerms\":
+        0,\r\n      \"prettyName\": 8\r\n    },\r\n    {\r\n      \"facets\": [\r\n
+        \       {\r\n          \"key\": \" #737C84\",\r\n          \"value\": 1\r\n
+        \       },\r\n        {\r\n          \"key\": \" #FBF6E1\",\r\n          \"value\":
+        1\r\n        },\r\n        {\r\n          \"key\": \"#E0CC91\",\r\n          \"value\":
+        1\r\n        }\r\n      ],\r\n      \"name\": \"normalized32Colors.hex\",\r\n
+        \     \"otherTerms\": 3,\r\n      \"prettyName\": 9\r\n    }\r\n  ]\r\n}"
+    http_version: 
+  recorded_at: Wed, 02 May 2018 22:14:47 GMT
+recorded_with: VCR 4.0.0
