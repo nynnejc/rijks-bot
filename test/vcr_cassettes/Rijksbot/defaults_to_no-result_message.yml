@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.rijksmuseum.nl/api/en/collection?culture=en&format=json&imgonly=true&key=XxQeSXj5&p=&ps=100&q=search_term
+    uri: https://www.rijksmuseum.nl/api/en/collection?culture=en&format=json&imgonly=true&key=<RIJKSMUSEUM_API_KEY>&p=&ps=100&q=search_term
     body:
       encoding: US-ASCII
       string: ''
@@ -19,9 +19,9 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 03 May 2018 19:41:56 GMT
+      - Tue, 22 May 2018 00:00:31 GMT
       Set-Cookie:
-      - rmtc=WutmBAq5Lt0AABwmXrgAAAHx; path=/
+      - rmtc=WwNdnwq5Lt0AADNjwPMAAAJs; path=/
       Cache-Control:
       - no-store, must-revalidate, no-cache
       Pragma:
@@ -54,5 +54,5 @@ http_interactions:
         \     \"name\": \"normalized32Colors.hex\",\r\n      \"otherTerms\": 0,\r\n
         \     \"prettyName\": 9\r\n    }\r\n  ]\r\n}"
     http_version: 
-  recorded_at: Thu, 03 May 2018 19:41:56 GMT
+  recorded_at: Tue, 22 May 2018 00:00:31 GMT
 recorded_with: VCR 4.0.0

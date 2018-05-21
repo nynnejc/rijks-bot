@@ -15,7 +15,7 @@ describe Rijksmus::API::Client, :vcr do
     end
 
     it "delivers timestamp" do
-      subject.images.headers["date"].must_equal "Wed, 02 May 2018 22:14:01 GMT"
+      subject.images.headers["date"].must_equal "Tue, 22 May 2018 00:00:29 GMT"
     end
 
     it "delivers 4 artObjects" do
