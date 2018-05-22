@@ -1,25 +1,25 @@
 #!/usr/bin/env ruby
 
-$LOAD_PATH.unshift(File.expand_path("lib"))
+$LOAD_PATH.unshift(File.expand_path('lib'))
 require 'dotenv'
 require 'pry'
 require 'rijksbot'
 Dotenv.load
 
 client = Twitter::REST::Client.new do |config|
-  config.consumer_key        = ENV["RIJKSBOT_CONSUMER_KEY"]
-  config.consumer_secret     = ENV["RIJKSBOT_CONSUMER_SECRET"]
-  config.access_token        = ENV["RIJKSBOT_ACCESS_TOKEN"]
-  config.access_token_secret = ENV["RIJKSBOT_ACCESS_SECRET"]
+  config.consumer_key        = ENV['RIJKSBOT_CONSUMER_KEY']
+  config.consumer_secret     = ENV['RIJKSBOT_CONSUMER_SECRET']
+  config.access_token        = ENV['RIJKSBOT_ACCESS_TOKEN']
+  config.access_token_secret = ENV['RIJKSBOT_ACCESS_SECRET']
 end
 
 # timeline = client.user_timeline(count: 800).map{|t| t.in_reply_to_status_id}
 bot = Rijksbot.new(client)
 
-last_checked = Time.now.utc - 86400
+last_checked = Time.now.utc - 86_400
 
-while true do
-  mentions = client.mentions_timeline.select{|tweet| tweet.created_at > last_checked}
+loop do
+  mentions = client.mentions_timeline.select { |tweet| tweet.created_at > last_checked }
   last_checked = Time.now.utc
 
   mentions.each do |tweet|
@@ -37,4 +37,4 @@ while true do
   sleep 30
 end
 
-puts "finished"
+puts 'finished'

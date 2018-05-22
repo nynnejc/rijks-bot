@@ -1,11 +1,11 @@
-module Rijksmus 
+module Rijksmus
   module API
     class Client
       include ::HTTParty
 
-      base_uri "https://www.rijksmuseum.nl/api/en"
+      base_uri 'https://www.rijksmuseum.nl/api/en'
       # debug_output
-      default_params :format => "json"
+      default_params format: 'json'
 
       attr_accessor :search_term, :api_token
 
@@ -15,8 +15,7 @@ module Rijksmus
         search_term || raise('No search term provided')
       end
 
-
-      def images 
+      def images
         page = nil
         endpoint = '/collection'
         options = { query: { q: search_term, imgonly: true, p: page, ps: 100, culture: 'en', key: api_token } }
@@ -25,10 +24,10 @@ module Rijksmus
       end
 
       def random_image_search
-        response = images 
-        if response.success? 
-          count = response["count"]
-          response["artObjects"].sample
+        response = images
+        if response.success?
+          count = response['count']
+          response['artObjects'].sample
 
         else
           raise(response.inspect)
