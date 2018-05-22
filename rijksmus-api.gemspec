@@ -31,4 +31,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "minitest-vcr", '~> 1.4'
   spec.add_development_dependency 'webmock', '~> 3.3'
+  spec.add_development_dependency 'simplecov'
 end

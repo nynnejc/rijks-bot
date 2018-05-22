@@ -1,3 +1,5 @@
+require 'simplecov'
+SimpleCov.start
 ENV["RAILS_ENV"] = "test"
 require "minitest/reporters"
 Minitest::Reporters.use! [Minitest::Reporters::DefaultReporter.new(:color => true)]
