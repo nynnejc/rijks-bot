@@ -38,6 +38,6 @@ class Rijksbot
     image_title = image['title']
     screen_name = '@' + tweet.user.screen_name
     text = screen_name + ' ' + image_title
-    @twitter_api.update_with_media(text, open(image_url), in_reply_to_status_id: tweet.id)
+    @twitter_api.update_with_media(text, open(image_url), in_reply_to_status_id: tweet.id) # rubocop:disable Security/Open
   end
 end

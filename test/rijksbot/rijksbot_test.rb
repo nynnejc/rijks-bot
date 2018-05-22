@@ -23,7 +23,7 @@ describe Rijksbot, :vcr do
 
   it 'posts to twitter', vcr: { match_requests_on: [:host], allow_unused_http_interactions: false } do
     # Tempfile contains a google URL with random filename. restrict matching to :host solves this.
-    # Also the domain alternates between "lh3.googleusercontent.com" and "lh4.googleusercontent.com" …, so we captured all of them and allow some unused.
+    # Also the domain alternates between "lh3.googleusercontent.com" and "lh4.googleusercontent.com"... , so we captured all of them and allow some unused.
     # Not very elegant but good enough for the time being. cbuggle, 03.05.2018
     twitter_client.expect :user_timeline, [tweet_1]
     twitter_client.expect(:update_with_media, true, [String, Tempfile, { in_reply_to_status_id: 'tweet-1' }])

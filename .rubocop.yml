@@ -1,0 +1,17 @@
+require: rubocop
+
+AllCops:
+  DisplayCopNames: true
+
+Metrics/LineLength:
+  Max: 120
+  Exclude:
+    - test/rijksbot/rijksbot_test.rb
+    - test/support/vcr.rb
+    - lib/rijksbot.rb
+
+RSpec/MultipleExpectations:
+  Max: 2
+
+Style/Documentation:
+  Enabled: false
