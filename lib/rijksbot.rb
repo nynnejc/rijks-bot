@@ -30,7 +30,7 @@ class Rijksbot
 
   def get_image(search_term)
     api_key = ENV['RIJKSMUSEUM_API_KEY']
-    image = Rijksmus::API::Client.new(search_term, api_key).random_image_search
+    Rijksmus::API::Client.new(search_term, api_key).random_image_search
   end
 
   def reply_with_image(tweet, image)

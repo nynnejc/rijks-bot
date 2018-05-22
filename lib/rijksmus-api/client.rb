@@ -19,19 +19,13 @@ module Rijksmus
         page = nil
         endpoint = '/collection'
         options = { query: { q: search_term, imgonly: true, p: page, ps: 100, culture: 'en', key: api_token } }
-        response = self.class.get(endpoint, options)
-        response
+        self.class.get(endpoint, options)
       end
 
       def random_image_search
         response = images
-        if response.success?
-          count = response['count']
-          response['artObjects'].sample
-
-        else
-          raise(response.inspect)
-        end
+        return response['artObjects'].sample if response.success?
+        raise(response.inspect)
       end
     end
   end
