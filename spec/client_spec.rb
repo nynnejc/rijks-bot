@@ -8,7 +8,7 @@ RSpec.describe Rijksmus::API::Client do
   let(:search_term) { 'duck' }
   describe 'successful APi call' do
     it 'must respond with 200' do
-      expect(@client.images.code).to eq(200)
+      expect(@client.images_response.code).to eq(200)
     end
   end
 end

@@ -13,7 +13,7 @@ VCR.configure do |config|
   # config.allow_http_connections_when_no_cassette = true
   #
   # For permanent runs we prefer these stricter options. cbuggle 03.05.2018
-  config.default_cassette_options = { allow_unused_http_interactions: false, record: :once }
+  config.default_cassette_options = { allow_unused_http_interactions: false, record: :none }
   config.allow_http_connections_when_no_cassette = false
 
   config.filter_sensitive_data('<RIJKSMUSEUM_API_KEY>') { ENV['RIJKSMUSEUM_API_KEY'] }

@@ -10,15 +10,15 @@ describe Rijksmus::API::Client, :vcr do
 
   describe 'requesting art' do
     it 'is successful' do
-      subject.images.code.must_equal 200
+      subject.images_response.code.must_equal 200
     end
 
     it 'delivers timestamp' do
-      subject.images.headers['date'].must_equal 'Tue, 22 May 2018 00:00:29 GMT'
+      subject.images_response.headers['date'].must_equal 'Wed, 23 May 2018 09:31:42 GMT'
     end
 
     it 'delivers 4 artObjects' do
-      subject.images.parsed_response['artObjects'].length.must_equal 4
+      subject.images_response.parsed_response['artObjects'].length.must_equal 4
     end
   end
 end

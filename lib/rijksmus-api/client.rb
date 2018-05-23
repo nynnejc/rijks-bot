@@ -15,7 +15,7 @@ module Rijksmus
         search_term || raise('No search term provided')
       end
 
-      def images
+      def images_response
         page = nil
         endpoint = '/collection'
         options = { query: { q: search_term, imgonly: true, p: page, ps: 100, culture: 'en', key: api_token } }
@@ -23,9 +23,9 @@ module Rijksmus
       end
 
       def random_image_search
-        response = images
-        return response['artObjects'].sample if response.success?
-        raise(response.inspect)
+        images_response
+        return images_response['artObjects'].sample if images_response.success?
+        raise(images_response.inspect)
       end
     end
   end
