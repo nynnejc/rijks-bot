@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.rijksmuseum.nl/api/en/collection?culture=en&format=json&imgonly=true&key=XxQeSXj5&p=&ps=100&q=Karlsruhe
+    uri: https://www.rijksmuseum.nl/api/en/collection?culture=en&format=json&imgonly=true&key=<RIJKSMUSEUM_API_KEY>&p=&ps=100&q=Karlsruhe
     body:
       encoding: US-ASCII
       string: ''
@@ -19,9 +19,9 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 02 May 2018 22:14:47 GMT
+      - Tue, 22 May 2018 00:00:29 GMT
       Set-Cookie:
-      - rmtc=Wuo4Vwq5Lt0AABwISQUAAACT; path=/
+      - rmtc=WwNdnQq5Lt0AADNTvm4AAAGG; path=/
       Cache-Control:
       - no-store, must-revalidate, no-cache
       Pragma:
@@ -136,5 +136,5 @@ http_interactions:
         1\r\n        }\r\n      ],\r\n      \"name\": \"normalized32Colors.hex\",\r\n
         \     \"otherTerms\": 3,\r\n      \"prettyName\": 9\r\n    }\r\n  ]\r\n}"
     http_version: 
-  recorded_at: Wed, 02 May 2018 22:14:47 GMT
+  recorded_at: Tue, 22 May 2018 00:00:29 GMT
 recorded_with: VCR 4.0.0
