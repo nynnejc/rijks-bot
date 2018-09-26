@@ -1,0 +1,120 @@
+PATH
+  remote: .
+  specs:
+    rijksmus-api (0.1.0)
+      dotenv
+      httparty
+      rubocop (~> 0.56.0)
+      twitter
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    ansi (1.5.0)
+    ast (2.4.0)
+    buftok (0.2.0)
+    builder (3.2.3)
+    coderay (1.1.2)
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
+    docile (1.3.1)
+    domain_name (0.5.20180417)
+      unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.5.0)
+    equalizer (0.0.11)
+    hashdiff (0.3.7)
+    http (3.3.0)
+      addressable (~> 2.3)
+      http-cookie (~> 1.0)
+      http-form_data (~> 2.0)
+      http_parser.rb (~> 0.6.0)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    http-form_data (2.1.1)
+    http_parser.rb (0.6.0)
+    httparty (0.16.2)
+      multi_xml (>= 0.5.2)
+    json (2.1.0)
+    memoizable (0.4.2)
+      thread_safe (~> 0.3, >= 0.3.1)
+    method_source (0.9.0)
+    minispec-metadata (2.0.0)
+      minitest
+    minitest (5.11.3)
+    minitest-reporters (1.3.4)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
+    minitest-vcr (1.4.0)
+      minispec-metadata (~> 2.0)
+      minitest (>= 4.7.5)
+      vcr (>= 2.9)
+    multi_xml (0.6.0)
+    multipart-post (2.0.0)
+    naught (1.1.0)
+    parallel (1.12.1)
+    parser (2.5.1.2)
+      ast (~> 2.4.0)
+    powerpack (0.1.2)
+    pry (0.11.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    public_suffix (3.0.3)
+    rainbow (3.0.0)
+    rake (10.5.0)
+    rubocop (0.56.0)
+      parallel (~> 1.10)
+      parser (>= 2.5)
+      powerpack (~> 0.1)
+      rainbow (>= 2.2.2, < 4.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (~> 1.0, >= 1.0.1)
+    ruby-progressbar (1.10.0)
+    safe_yaml (1.0.4)
+    simple_oauth (0.3.1)
+    simplecov (0.16.1)
+      docile (~> 1.1)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.2)
+    thread_safe (0.3.6)
+    twitter (6.2.0)
+      addressable (~> 2.3)
+      buftok (~> 0.2.0)
+      equalizer (~> 0.0.11)
+      http (~> 3.0)
+      http-form_data (~> 2.0)
+      http_parser.rb (~> 0.6.0)
+      memoizable (~> 0.4.0)
+      multipart-post (~> 2.0)
+      naught (~> 1.0)
+      simple_oauth (~> 0.3.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.5)
+    unicode-display_width (1.4.0)
+    vcr (4.0.0)
+    webmock (3.4.2)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.7)
+  minitest
+  minitest-reporters (~> 1.2)
+  minitest-vcr (~> 1.4)
+  pry
+  rake (~> 10.0)
+  rijksmus-api!
+  simplecov
+  webmock (~> 3.3)
+
+BUNDLED WITH
+   1.16.2
