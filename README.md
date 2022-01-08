@@ -14,7 +14,7 @@ This project was started at a Rails Girls Berlin Code & Cake event in 2017.
 We gladly accept contributions to this project. Get in touch with thoughts and ideas.
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 #### Add your Rijksmuseum API key:
@@ -98,6 +98,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/cbuggle"><img src="https://avatars.githubusercontent.com/u/20729?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Christian Buggle</b></sub></a><br /><a href="#maintenance-cbuggle" title="Maintenance">🚧</a> <a href="https://github.com/nynnejc/rijks-bot/commits?author=cbuggle" title="Tests">⚠️</a></td>
     <td align="center"><a href="https://github.com/Haimchen"><img src="https://avatars.githubusercontent.com/u/5741389?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sarah</b></sub></a><br /><a href="https://github.com/nynnejc/rijks-bot/commits?author=Haimchen" title="Code">💻</a> <a href="#maintenance-Haimchen" title="Maintenance">🚧</a> <a href="https://github.com/nynnejc/rijks-bot/commits?author=Haimchen" title="Tests">⚠️</a></td>
     <td align="center"><a href="https://tonextflow.com/"><img src="https://avatars.githubusercontent.com/u/5438144?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tonio Serna</b></sub></a><br /><a href="https://github.com/nynnejc/rijks-bot/commits?author=nelantone" title="Code">💻</a> <a href="https://github.com/nynnejc/rijks-bot/commits?author=nelantone" title="Documentation">📖</a> <a href="#ideas-nelantone" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-nelantone" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#mentoring-nelantone" title="Mentoring">🧑‍🏫</a> <a href="https://github.com/nynnejc/rijks-bot/commits?author=nelantone" title="Tests">⚠️</a></td>
+    <td align="center"><a href="http://nynnechristoffersen.com/"><img src="https://avatars.githubusercontent.com/u/8503391?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nynne Just Christoffersen</b></sub></a><br /><a href="https://github.com/nynnejc/rijks-bot/commits?author=nynnejc" title="Code">💻</a> <a href="#content-nynnejc" title="Content">🖋</a> <a href="#design-nynnejc" title="Design">🎨</a> <a href="https://github.com/nynnejc/rijks-bot/commits?author=nynnejc" title="Documentation">📖</a> <a href="#infra-nynnejc" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-nynnejc" title="Maintenance">🚧</a> <a href="https://github.com/nynnejc/rijks-bot/commits?author=nynnejc" title="Tests">⚠️</a></td>
   </tr>
 </table>
 

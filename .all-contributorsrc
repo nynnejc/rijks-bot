@@ -54,6 +54,21 @@
         "mentoring",
         "test"
       ]
+    },
+    {
+      "login": "nynnejc",
+      "name": "Nynne Just Christoffersen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8503391?v=4",
+      "profile": "http://nynnechristoffersen.com/",
+      "contributions": [
+        "code",
+        "content",
+        "design",
+        "doc",
+        "infra",
+        "maintenance",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7
