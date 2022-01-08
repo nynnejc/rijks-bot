@@ -11,32 +11,16 @@
   "commitConvention": "none",
   "contributors": [
     {
-      "login": "Dahie",
-      "name": "Daniel Senff",
-      "avatar_url": "https://avatars.githubusercontent.com/u/28617?v=4",
-      "profile": "http://www.danielsenff.de/",
+      "login": "nynnejc",
+      "name": "Nynne Just Christoffersen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8503391?v=4",
+      "profile": "http://nynnechristoffersen.com/",
       "contributions": [
         "code",
-        "maintenance"
-      ]
-    },
-    {
-      "login": "cbuggle",
-      "name": "Christian Buggle",
-      "avatar_url": "https://avatars.githubusercontent.com/u/20729?v=4",
-      "profile": "https://github.com/cbuggle",
-      "contributions": [
-        "maintenance",
-        "test"
-      ]
-    },
-    {
-      "login": "Haimchen",
-      "name": "Sarah",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5741389?v=4",
-      "profile": "https://github.com/Haimchen",
-      "contributions": [
-        "code",
+        "content",
+        "design",
+        "doc",
+        "infra",
         "maintenance",
         "test"
       ]
@@ -56,16 +40,32 @@
       ]
     },
     {
-      "login": "nynnejc",
-      "name": "Nynne Just Christoffersen",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8503391?v=4",
-      "profile": "http://nynnechristoffersen.com/",
+      "login": "Haimchen",
+      "name": "Sarah",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5741389?v=4",
+      "profile": "https://github.com/Haimchen",
       "contributions": [
         "code",
-        "content",
-        "design",
-        "doc",
-        "infra",
+        "maintenance",
+        "test"
+      ]
+    },
+    {
+      "login": "Dahie",
+      "name": "Daniel Senff",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28617?v=4",
+      "profile": "http://www.danielsenff.de/",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "cbuggle",
+      "name": "Christian Buggle",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20729?v=4",
+      "profile": "https://github.com/cbuggle",
+      "contributions": [
         "maintenance",
         "test"
       ]

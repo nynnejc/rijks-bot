@@ -13,9 +13,6 @@ This project was started at a Rails Girls Berlin Code & Cake event in 2017.
 # Contributing
 We gladly accept contributions to this project. Get in touch with thoughts and ideas.
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 #### Add your Rijksmuseum API key:
 Add an account and ask for a  [Rijksmuseum API](https://www.rijksmuseum.nl/en/api) Key. You will recieve the key via email. It will only take you few minutes.
@@ -108,3 +105,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
