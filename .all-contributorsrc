@@ -19,6 +19,16 @@
         "code",
         "maintenance"
       ]
+    },
+    {
+      "login": "cbuggle",
+      "name": "Christian Buggle",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20729?v=4",
+      "profile": "https://github.com/cbuggle",
+      "contributions": [
+        "maintenance",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7

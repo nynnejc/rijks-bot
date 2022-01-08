@@ -14,7 +14,7 @@ This project was started at a Rails Girls Berlin Code & Cake event in 2017.
 We gladly accept contributions to this project. Get in touch with thoughts and ideas.
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 #### Add your Rijksmuseum API key:
@@ -95,6 +95,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="http://www.danielsenff.de/"><img src="https://avatars.githubusercontent.com/u/28617?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Daniel Senff</b></sub></a><br /><a href="https://github.com/nynnejc/rijks-bot/commits?author=Dahie" title="Code">💻</a> <a href="#maintenance-Dahie" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/cbuggle"><img src="https://avatars.githubusercontent.com/u/20729?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Christian Buggle</b></sub></a><br /><a href="#maintenance-cbuggle" title="Maintenance">🚧</a> <a href="https://github.com/nynnejc/rijks-bot/commits?author=cbuggle" title="Tests">⚠️</a></td>
   </tr>
 </table>
 
