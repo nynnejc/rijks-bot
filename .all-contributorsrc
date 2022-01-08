@@ -1,0 +1,25 @@
+{
+  "projectName": "rijks-bot",
+  "projectOwner": "nynnejc",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "Dahie",
+      "name": "Daniel Senff",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28617?v=4",
+      "profile": "http://www.danielsenff.de/",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
