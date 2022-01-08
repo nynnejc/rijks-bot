@@ -40,6 +40,20 @@
         "maintenance",
         "test"
       ]
+    },
+    {
+      "login": "nelantone",
+      "name": "Tonio Serna",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5438144?v=4",
+      "profile": "https://tonextflow.com/",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas",
+        "infra",
+        "mentoring",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7
