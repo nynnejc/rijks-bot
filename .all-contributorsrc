@@ -29,6 +29,17 @@
         "maintenance",
         "test"
       ]
+    },
+    {
+      "login": "Haimchen",
+      "name": "Sarah",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5741389?v=4",
+      "profile": "https://github.com/Haimchen",
+      "contributions": [
+        "code",
+        "maintenance",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7
