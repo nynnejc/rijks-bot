@@ -85,6 +85,22 @@
         "maintenance",
         "test"
       ]
+    },
+    {
+      "login": "bestie",
+      "name": "Stephen Best",
+      "avatar_url": "https://avatars.githubusercontent.com/u/145723?v=4",
+      "profile": "https://github.com/bestie",
+      "contributions": [
+        "question",
+        "content",
+        "data",
+        "design",
+        "doc",
+        "ideas",
+        "mentoring",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7
